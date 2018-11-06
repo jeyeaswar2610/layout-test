@@ -1,0 +1,36 @@
+<ds-navbar></ds-navbar>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Demands
+        <button class="btn btn-primary btn-sm pull-right" [routerLink]="['/demand/create']"><span class="glyphicon glyphicon-plus"></span></button>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <th>Demand ID</th>
+                <th>Project Name</th>
+                <th>Chargeable</th>
+                <th>Location</th>
+                <th>Career Level</th>
+                <th>Primary Skill</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let demand of demands">
+                    <td>{{demand.DemandID}}</td>
+                    <td>{{demand.ProjectName}}</td>
+                    <td><input type="checkbox" [checked]="demand.Chargeable" disabled="disabled" /> </td>
+                    <td>{{demand.Location}}</td>
+                    <td>{{demand.CareerLevel}}</td>
+                    <td>{{demand.PrimarySkill}}</td>
+                    <td><a>Edit</a></td>
+                    <td><a>Delete</a></td>
+                    <td><a [routerLink]="['/supply',demand.DemandID]">View Supply</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

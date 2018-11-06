@@ -1,0 +1,51 @@
+<!-- <div class="col-lg-4"></div>
+<div class="jumbotron col-lg-5">
+  <form [formGroup]="loginform" (ngSubmit)="doLogin(loginform)">
+    <div class="form-group">
+      <label for="loginId">Login ID</label>
+      <input type="text" class="form-control" formControlName="loginId" placeholder="Login ID">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" placeholder="Password" formControlName="password">
+    </div>
+    <button type="submit" class="btn btn-success">Login</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+  </form>
+</div> -->
+
+        <div class="signin-page">
+        <div class="mn-content valign-wrapper">
+            <main class="mn-inner container">
+                <div class="valign">
+                      <div class="row">
+						<div class="s12" style="text-align:center"><h4>Demand & Supply Manager</h4></div>
+                          <div class="col s12 m6 l4 offset-l4 offset-m3">
+                              <div class="card white darken-1">
+                                  <div class="card-content ">
+                                      <span class="card-title">Sign In</span>
+                                       <div class="row">
+                                           <form [formGroup]="loginform" (ngSubmit)="doLogin(loginform)" class="col s12">
+														
+                                                       <div class="col s12">
+													   <label>Username</label>
+													   <input type="email" class="" placeholder="" />
+													   </div>
+                                               <div class="col s12">
+                                                   <label>Password</label>
+												   <input type="text" class="" placeholder="" />
+                                               </div>
+                                               <div class="col s12 right-align m-t-sm">
+													<button type="submit" class="waves-effect waves-light btn teal">Login</button>
+													<button type="reset" class="waves-effect waves-grey btn-flat">Reset</button>
+                                               </div>
+                                           </form>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+		</div>
